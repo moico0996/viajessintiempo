@@ -1,0 +1,21 @@
+.contac {
+    padding: 40px 40px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #f4511e;
+    font-size: 20px;
+  }
+  .logo {
+    color: #f4511e;
+    font-size: 100px;
+   
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 50px 0;
+    }
+  }

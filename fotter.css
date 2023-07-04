@@ -1,0 +1,29 @@
+.logo-fotter{
+    width: 200px;
+}
+.redess{
+    color:#FA4D1B;
+}
+.icon{
+    color: white;
+}
+
+.footer{
+    width:100%;
+    background-color: #353333;
+}
+
+
+@media (max-width: 600px) {
+
+    .suscribe{
+        color: aliceblue;
+    }
+    
+
+
+
+
+
+
+    }

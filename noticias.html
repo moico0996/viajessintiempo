@@ -1,0 +1,192 @@
+<html lang="en">
+<head>
+  <title>Noticias de Turismo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    .boton-video{
+    background-color: black;
+    border-radius: 2px solid white ;
+    color: white;
+    
+}
+.boton-video:hover{
+    color: white;
+    background-color: red;
+}
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Portal</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Viajeros</a></li>
+        <li><a href="#">Sin Tiempo</a></li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group input-group">
+          <input type="text" class="form-control" placeholder="Search..">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </span>        
+        </div>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"></span> Centro de Noticias</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container text-center">    
+  <div class="row">
+    <div class="col-sm-3 well">
+      <div class="well">
+        <p><a href="#">NOTICIAS</a></p>
+        <img src="imagenes/logo_small.png" class="img-circle" height="65" width="65" alt="turismo">
+      </div>
+      <div class="well">
+        <p><a href="#">Interes</a></p>
+        <p>
+          <span class="label label-default">Turismo</span>
+          <span class="label label-primary">Noticias</span>
+          <span class="label label-success">Cultura</span>
+          <span class="label label-info">Actividades</span>
+          <span class="label label-warning">Trujillo</span>
+          <span class="label label-danger">Fechas</span>
+        </p>
+      </div>
+      
+      <p><a href="#">Casa Identidad Regional</a></p>
+      <p><a href="#">Jardin Botanico</a></p>
+      <p><a href="#">Museo UNT</a></p>
+    </div>
+    <div class="col-sm-7">
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div style="text-align:center"> 
+            <button class="boton-video"  onclick="playPause()">Play/Pause</button> 
+            <button class="boton-video" onclick="makeBig()">Big</button>
+            <button class="boton-video" onclick="makeSmall()">Small</button>
+            <button class="boton-video" onclick="makeNormal()">Normal</button>
+            <br><br>
+            <h1 class="h1">CONACHE</h1>
+            <br>
+            <video id="video1" class="video"  >
+                <source src="videos/noti.mp4" type="video/mp4">
+                <source src="videos/noti.mp4" type="video/ogg">
+                Your browser does not support HTML video.
+            </video>
+            
+            
+          </div> 
+          
+        </div>
+      </div>
+
+
+    
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="panel panel-default text-left">
+            <div class="panel-body">
+              <p contenteditable="true">Centro de Noticias VST</p>
+              <button type="button" class="btn btn-default btn-sm">
+                <span class="glyphicon glyphicon-thumbs-up"></span> Like
+              </button>     
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+           <p>Casa Identidad Regional</p>
+           <img src="imagenes/IDENTIDAD.jpeg" class="img-circle" height="55" width="55" alt="Avatar">
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember.... no I don't.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+           <p>Jardin Botanico</p>
+           <img src="imagenes/jardin.jpeg" class="img-circle" height="55" width="55" alt="Avatar">
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>El jardín es un espacio para interactuar con la naturaleza, con 250 especies de plantas, además de animales como conejos y loros. Un lugar tranquilo para pasar un momento en familia. El ingreso actualmente es gratis.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+           <p>Museo UNT</p>
+           <img src="imagenes/descargar.jpg" class="img-circle" height="55" width="55" alt="Avatar">
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>El Museo de la "Universidad Nacional de Trujillo", es un espacio que ofrece conocer las culturas que predominaron en el norte del Pais. La entrada es un costo de 5 soles, ademas tambien el primer viernes de cada mes organizan el programa "MUSEO ABRE DE NOCHE" para todo el publico en general, la entrada es totalmente gratuita.</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="col-sm-2 well">
+      <div class="thumbnail">
+        <p>Eventos</p>
+        <img src="imagenes/trujillo.jpg" alt="Paris" width="400" height="300">
+        <p><strong>Trujillo</strong></p>
+        <p>Julio del 2023</p>
+        <button class="btn btn-primary"><a href="periodico/periodico-centro.jpeg">info</a></button>
+      </div>      
+      <div class="well">
+        <a href="#">FESTIVIDAD POR MES</a>
+      </div>
+      <div class="well">
+        <a href="#">INFORME CONACHE</a>
+      </div>
+      <div class="well">
+        <a href="#">INFORME LAREDO</a>
+      </div>
+      <div class="well">
+        <a href="#">INFORME HUANCHACO</a>
+      </div>
+
+
+
+
+    </div>
+  </div>
+  <script src="videos/video.js"></script>
+</div>

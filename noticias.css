@@ -1,0 +1,96 @@
+.blog{
+    
+    width: 100%;
+    position: relative;
+    
+}
+.blog-1{
+    
+    border: 3px solid #5590EC;
+}
+.blog-2{
+    border: 3px solid #5590EC;
+}
+.blog-3{
+    border: 3px solid #5590EC;
+    
+}
+
+.noticias{
+    
+    width: 85%;
+    position: relative;
+    bottom: 70px;
+        
+    
+}
+
+
+.title-2{
+    
+    width: 18%;
+    text-align: center;
+    color: whitesmoke;
+    background-color: red;
+    position: relative;
+    top: 53px;
+    left: 15px;
+    z-index: 1;
+}
+
+.noticias-1{
+    width: 100%;
+    background-color: aliceblue;
+    
+    
+}
+.noticias-h2{
+    background-color: red;
+    color: aliceblue;
+}
+.noticias-por{
+    position: relative;
+    top: 10px;  
+}
+
+.noticias-pequeños{
+    width: 50%;
+    position: relative;
+    padding: 2px;
+}
+.noticias-peque{
+    
+    background-color: gainsboro;
+
+    
+    
+}
+
+
+@media screen and (max-width: 768px){
+    .noticias-pequeñoss{
+        background-color: beige;
+    }
+    .noticias-pequeños{
+        width: 180px;
+        position: relative;
+        left: 0;
+        margin: auto;
+    
+    }
+    .sub-title{
+        width: 80%;
+        font-size: 1em;
+        position: relative;
+        top: 1px;
+        
+       
+    }
+    .title-2{
+        width: 30%;
+        font-size: 1em;
+        
+    
+
+    }
+}
